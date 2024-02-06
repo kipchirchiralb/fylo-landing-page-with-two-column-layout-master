@@ -89,6 +89,9 @@ header a:hover {
   width: 100%;
   display: block;
 }
+#curved-bg-desktop {
+  display: none;
+}
 .wherever-you-are h2 {
   font-size: 18px;
   margin-top: 40px;
@@ -192,3 +195,73 @@ footer .socials {
 .attribution a {
   color: brown;
 }
+
+/* Desktop media queries */
+
+@media screen and (min-width: 750px) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .cta-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cta-form input[type="text"] {
+    width: 65%;
+  }
+  .cta-form input[type="submit"] {
+    width: 33%;
+  }
+  #curved-bg-desktop {
+    display: block;
+  }
+  #curved-bg-desktop img {
+    width: 100%;
+    display: block;
+  }
+  #curved-bg-mobile {
+    display: none;
+  }
+  .wherever-you-are {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .wherever-you-are .card {
+    width: 60%;
+  }
+  .section-text {
+    text-align: left;
+  }
+
+  .early-access {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  .early-access > * {
+    flex: 1;
+  }
+  .early-access .section-form input,
+  .early-access .section-form button {
+    margin: 20px 0;
+  }
+  .early-access .section-form button {
+    width: fit-content;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-flex > div {
+    flex: 1;
+  }
+}
+/* the end!!!!!!! */
+
+/* huddle landing page */
+/* any design questions */
